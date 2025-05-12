@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'yourdockerhubusername/java-calculator'
+        IMAGE_NAME = 'jane/java-calculator'
     }
 
     stages {
         stage('Clone Repo') {
             steps {
                 // Clone your repo from GitHub
-                git 'https://github.com/CeeyIT-Solutions/JavaWeb3.git'
+                git 'https://github.com/janffy1/JavaWeb3.git'
             }
         }
 
